@@ -13,8 +13,10 @@
         tools:layout_editor_absoluteX="29dp"
         tools:layout_editor_absoluteY="347dp" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/chicken"
+        android:scaleType="fitCenter"
+        android:background="@null"
         android:layout_width="91dp"
         android:layout_height="100dp"
         android:layout_alignParentTop="true"
@@ -28,8 +30,10 @@
         android:layout_toLeftOf="@+id/goose"
         app:srcCompat="@drawable/cock" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/goose"
+        android:scaleType="fitCenter"
+        android:background="@null"
         android:layout_width="91dp"
         android:layout_height="100dp"
         android:layout_alignParentTop="true"
@@ -43,8 +47,10 @@
         android:layout_toLeftOf="@+id/horse"
         app:srcCompat="@drawable/goose" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/horse"
+        android:scaleType="fitCenter"
+        android:background="@null"
         android:layout_width="91dp"
         android:layout_height="100dp"
         android:layout_alignParentTop="true"
@@ -57,8 +63,10 @@
         android:layout_marginBottom="10dp"
         app:srcCompat="@drawable/horse" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/koala"
+        android:scaleType="fitCenter"
+        android:background="@null"
         android:layout_width="91dp"
         android:layout_height="100dp"
         android:layout_alignParentTop="true"
@@ -72,8 +80,10 @@
         android:layout_toRightOf="@+id/horse"
         app:srcCompat="@drawable/koala" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/monkey"
+        android:scaleType="fitCenter"
+        android:background="@null"
         android:layout_width="91dp"
         android:layout_height="100dp"
         android:layout_alignParentTop="true"
@@ -87,48 +97,60 @@
         android:layout_toRightOf="@+id/koala"
         app:srcCompat="@drawable/monkey" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/mouse"
+        android:scaleType="fitCenter"
+        android:background="@null"
         android:layout_width="91dp"
         android:layout_height="100dp"
         android:layout_below="@+id/chicken"
         android:layout_alignLeft="@+id/chicken"
         app:srcCompat="@drawable/mouse" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/panda"
+        android:scaleType="fitCenter"
+        android:background="@null"
         android:layout_width="91dp"
         android:layout_height="100dp"
         android:layout_below="@+id/goose"
         android:layout_alignLeft="@+id/goose"
         app:srcCompat="@drawable/panda" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/unicorn"
+        android:scaleType="fitCenter"
+        android:background="@null"
         android:layout_width="91dp"
         android:layout_height="100dp"
         android:layout_below="@+id/horse"
         android:layout_alignLeft="@+id/horse"
         app:srcCompat="@drawable/unicorn" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/turtle"
+        android:scaleType="fitCenter"
+        android:background="@null"
         android:layout_width="91dp"
         android:layout_height="100dp"
         android:layout_below="@+id/koala"
         android:layout_alignLeft="@+id/koala"
         app:srcCompat="@drawable/turtle" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/snail"
+        android:scaleType="fitCenter"
+        android:background="@null"
         android:layout_width="91dp"
         android:layout_height="100dp"
         android:layout_below="@+id/monkey"
         android:layout_alignLeft="@+id/monkey"
         app:srcCompat="@drawable/snail" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/back"
+        android:scaleType="fitCenter"
+        android:background="@null"
         android:layout_width="56dp"
         android:layout_height="46dp"
         android:layout_alignParentLeft="true"
@@ -136,8 +158,10 @@
         android:layout_marginLeft="16dp"
         app:srcCompat="@drawable/arrow_left_button" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/forward"
+        android:scaleType="fitCenter"
+        android:background="@null"
         android:layout_width="56dp"
         android:layout_height="46dp"
         android:layout_alignParentTop="false"

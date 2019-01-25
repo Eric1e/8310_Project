@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         play = (ImageButton) findViewById(R.id.Play);
         play.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 openLogin();
             }
         });

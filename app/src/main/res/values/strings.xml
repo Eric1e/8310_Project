@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">8310_Project</string>
+    <string name="title_activity_categories">CategoriesActivity</string>
 </resources>
