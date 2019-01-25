@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -10,6 +10,149 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="175dp" />
-</android.support.constraint.ConstraintLayout>
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="347dp" />
+
+    <ImageView
+        android:id="@+id/chicken"
+        android:layout_width="91dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@+id/goose"
+        app:srcCompat="@drawable/cock" />
+
+    <ImageView
+        android:id="@+id/goose"
+        android:layout_width="91dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@+id/horse"
+        app:srcCompat="@drawable/goose" />
+
+    <ImageView
+        android:id="@+id/horse"
+        android:layout_width="91dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/horse" />
+
+    <ImageView
+        android:id="@+id/koala"
+        android:layout_width="91dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/horse"
+        app:srcCompat="@drawable/koala" />
+
+    <ImageView
+        android:id="@+id/monkey"
+        android:layout_width="91dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/koala"
+        app:srcCompat="@drawable/monkey" />
+
+    <ImageView
+        android:id="@+id/mouse"
+        android:layout_width="91dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/chicken"
+        android:layout_alignLeft="@+id/chicken"
+        app:srcCompat="@drawable/mouse" />
+
+    <ImageView
+        android:id="@+id/panda"
+        android:layout_width="91dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/goose"
+        android:layout_alignLeft="@+id/goose"
+        app:srcCompat="@drawable/panda" />
+
+    <ImageView
+        android:id="@+id/unicorn"
+        android:layout_width="91dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/horse"
+        android:layout_alignLeft="@+id/horse"
+        app:srcCompat="@drawable/unicorn" />
+
+    <ImageView
+        android:id="@+id/turtle"
+        android:layout_width="91dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/koala"
+        android:layout_alignLeft="@+id/koala"
+        app:srcCompat="@drawable/turtle" />
+
+    <ImageView
+        android:id="@+id/snail"
+        android:layout_width="91dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/monkey"
+        android:layout_alignLeft="@+id/monkey"
+        app:srcCompat="@drawable/snail" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="56dp"
+        android:layout_height="46dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        app:srcCompat="@drawable/arrow_left_button" />
+
+    <ImageView
+        android:id="@+id/forward"
+        android:layout_width="56dp"
+        android:layout_height="46dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        app:srcCompat="@drawable/arrow_right_button" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Chicken"
+        android:textColor="@android:color/black"
+        android:textSize="46sp" />
+</RelativeLayout>
