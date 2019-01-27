@@ -12,7 +12,8 @@
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <ImageView
             android:id="@+id/sidebar"
@@ -34,25 +35,24 @@
 
         <ImageButton
             android:id="@+id/back"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
             android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="-20dp"
+            android:layout_marginBottom="0dp"
             android:background="@null"
             android:onClick="onBackClick"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/arrow_left_button_nocircle" />
 
         <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="38dp"
-            android:layout_height="321dp"
-            android:layout_centerHorizontal="true"
+            android:id="@+id/replay"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
             android:layout_marginTop="125dp"
             android:background="@null"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/replay_button" />
+
     </RelativeLayout>
 
     <VideoView
