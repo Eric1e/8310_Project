@@ -6,14 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".controllers.play_rhyme">
 
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="76dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/sidebar"
+            android:layout_width="76dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@color/colorPrimary" />
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="50dp"
+            android:layout_height="61dp"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@null"
+            android:onClick="onHomeClick"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/home_button" />
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-20dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/arrow_left_button_nocircle" />
+    </RelativeLayout>
+
     <VideoView
         android:id="@+id/videoView"
-        android:layout_width="646dp"
+        android:layout_width="654dp"
         android:layout_height="415dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/relativeLayout"
         app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
