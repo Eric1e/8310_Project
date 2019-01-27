@@ -31,8 +31,8 @@ public class play_rhyme extends AppCompatActivity {
         startActivity(intent);
     }
 
-//    public void onBackClick(View v) {
-//        Intent intent = new Intent(this, .class);
-//        startActivity(intent);
-//    }
+    public void onBackClick(View v) {
+        Intent intent = new Intent(this, RhymesList.class);
+        startActivity(intent);
+    }
 }

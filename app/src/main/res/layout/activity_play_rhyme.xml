@@ -40,6 +40,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="-20dp"
             android:background="@null"
+            android:onClick="onBackClick"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/arrow_left_button_nocircle" />
     </RelativeLayout>
