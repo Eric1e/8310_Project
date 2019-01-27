@@ -43,6 +43,16 @@
             android:onClick="onBackClick"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/arrow_left_button_nocircle" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="38dp"
+            android:layout_height="321dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="125dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/replay_button" />
     </RelativeLayout>
 
     <VideoView
