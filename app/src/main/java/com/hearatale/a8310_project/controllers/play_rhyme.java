@@ -30,4 +30,9 @@ public class play_rhyme extends AppCompatActivity {
         Intent intent = new Intent(this, CategoryActivity.class);
         startActivity(intent);
     }
+
+//    public void onBackClick(View v) {
+//        Intent intent = new Intent(this, .class);
+//        startActivity(intent);
+//    }
 }
