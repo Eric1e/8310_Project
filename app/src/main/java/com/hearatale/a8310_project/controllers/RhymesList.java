@@ -7,16 +7,16 @@ import android.view.View;
 
 import com.hearatale.a8310_project.R;
 
-public class CategoryActivity extends AppCompatActivity {
+public class RhymesList extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_category);
+        setContentView(R.layout.activity_rhyme_list);
     }
 
-    public void onMotherClick(View view) {
-        Intent intent = new Intent(this, RhymesList.class);
+    public void onRhymeClick(View view) {
+        Intent intent = new Intent(this, play_rhyme.class);
         startActivity(intent);
     }
 }
