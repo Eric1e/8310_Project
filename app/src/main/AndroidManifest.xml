@@ -26,6 +26,9 @@
             android:screenOrientation="landscape"></activity>
         <activity android:name=".controllers.play_rhyme"
             android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".controllers.RhymesList"
+            android:screenOrientation="landscape"></activity>
     </application>
 
 </manifest>
