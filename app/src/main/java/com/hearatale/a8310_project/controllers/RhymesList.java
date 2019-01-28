@@ -19,4 +19,9 @@ public class RhymesList extends AppCompatActivity {
         Intent intent = new Intent(this, play_rhyme.class);
         startActivity(intent);
     }
+
+    public void goBack(View v) {
+        Intent intent = new Intent(this, CategoryActivity.class);
+        startActivity(intent);
+    }
 }
