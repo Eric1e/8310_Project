@@ -24,10 +24,29 @@ public class play_rhyme extends AppCompatActivity {
         mVideoView.setVideoURI(uri);
         mVideoView.requestFocus();
         mVideoView.start();
+
+        ImageButton restart = findViewById(R.id.replay);
+        restart.setOnClickListener(new ImageButton.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mVideoView.suspend();
+                VideoView mVideoView2 = findViewById(R.id.videoView);
+                String uriPath = "android.resource://com.hearatale.a8310_project/"+R.raw.v1_oldmothergoose;
+                Uri uri = Uri.parse(uriPath);
+                mVideoView2.setVideoURI(uri);
+                mVideoView2.requestFocus();
+                mVideoView2.start();
+            }
+        });
     }
 
     public void onHomeClick(View v) {
         Intent intent = new Intent(this, CategoryActivity.class);
+        startActivity(intent);
+    }
+
+    public void onBackClick(View v) {
+        Intent intent = new Intent(this, RhymesList.class);
         startActivity(intent);
     }
 }
