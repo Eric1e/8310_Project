@@ -16,7 +16,7 @@ public class CategoryActivity extends AppCompatActivity {
     }
 
     public void onMotherClick(View view) {
-        Intent intent = new Intent(this, RhymesList.class);
+        Intent intent = new Intent(this, VideoListActivity.class);
         startActivity(intent);
     }
 }
