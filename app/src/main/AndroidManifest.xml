@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".QuizActivity"
+            android:screenOrientation="landscape" ></activity>
+        <activity
             android:name=".controllers.CategoryActivity"
-            android:screenOrientation="landscape"></activity>
+            android:screenOrientation="landscape" />
         <activity
             android:name=".controllers.MainActivity"
             android:screenOrientation="landscape">
@@ -23,12 +26,13 @@
         </activity>
         <activity
             android:name=".controllers.LoginActivity"
-            android:screenOrientation="landscape"></activity>
-        <activity android:name=".controllers.play_rhyme"
-            android:screenOrientation="landscape"></activity>
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".controllers.play_rhyme"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".controllers.RhymesList"
-            android:screenOrientation="landscape"></activity>
+            android:screenOrientation="landscape" />
     </application>
 
 </manifest>
