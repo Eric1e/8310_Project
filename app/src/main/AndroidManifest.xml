@@ -9,8 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".controllers.VideoListActivity"
+            android:screenOrientation="landscape">
+        </activity>
         <activity
-            android:name=".QuizActivity"
+            android:name=".controllers.QuizActivity"
             android:screenOrientation="landscape" ></activity>
         <activity
             android:name=".controllers.CategoryActivity"
@@ -28,10 +31,10 @@
             android:name=".controllers.LoginActivity"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".controllers.play_rhyme"
+            android:name=".controllers.RhymesList"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".controllers.RhymesList"
+            android:name=".controllers.PlayVideoActivity"
             android:screenOrientation="landscape" />
     </application>
 

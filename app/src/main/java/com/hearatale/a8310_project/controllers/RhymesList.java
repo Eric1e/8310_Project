@@ -16,7 +16,7 @@ public class RhymesList extends AppCompatActivity {
     }
 
     public void onRhymeClick(View view) {
-        Intent intent = new Intent(this, play_rhyme.class);
+        Intent intent = new Intent(this, PlayVideoActivity.class);
         startActivity(intent);
     }
 
