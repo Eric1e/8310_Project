@@ -49,4 +49,9 @@ public class PlayVideoActivity extends AppCompatActivity {
         Intent intent = new Intent(this, VideoListActivity.class);
         startActivity(intent);
     }
+
+    public void onQuizClick(View v) {
+        Intent intent = new Intent( this, QuizActivity.class);
+        startActivity(intent);
+    }
 }

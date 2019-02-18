@@ -57,6 +57,19 @@
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/replay_button" />
 
+        <ImageButton
+            android:id="@+id/quiz"
+            android:layout_width="62dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="118dp"
+            android:background="@null"
+            android:onClick="onQuizClick"
+            android:scaleType="fitCenter"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@android:drawable/ic_menu_help" />
+
     </RelativeLayout>
 
     <VideoView
