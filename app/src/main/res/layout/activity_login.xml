@@ -162,13 +162,13 @@
 
     <ImageButton
         android:id="@+id/forward"
+        android:scaleType="fitCenter"
+        android:background="@null"
         android:layout_width="56dp"
         android:layout_height="46dp"
-        android:background="@null"
-        android:scaleType="fitCenter"
-        android:translationX="675dp"
-        android:translationY="50dp"
-        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
         app:srcCompat="@drawable/arrow_right_button" />
 
     <TextView
