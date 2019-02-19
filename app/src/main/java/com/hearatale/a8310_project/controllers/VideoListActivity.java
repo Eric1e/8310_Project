@@ -1,11 +1,13 @@
 package com.hearatale.a8310_project.controllers;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.AssetManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import com.hearatale.a8310_project.R;
 
@@ -35,14 +37,27 @@ public class VideoListActivity extends AppCompatActivity {
 
         try {
             for (Field field : fields) {
-                Media media = new Media(Integer.toString(field.getInt(field)));
-                mediaList.add(media);
+                String name = field.getName();
+                if (!name.substring(0,1).equals("q")) {
+                    Media media = new Media(Integer.toString(field.getInt(field)));
+                    mediaList.add(media);
+                }
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
 
         return mediaList;
+    }
+
+    public void onHomeClick(View v) {
+        Intent intent = new Intent(this, CategoryActivity.class);
+        startActivity(intent);
+    }
+
+    public void onBackClick(View v) {
+        Intent intent = new Intent(this, CategoryActivity.class);
+        startActivity(intent);
     }
 
 }

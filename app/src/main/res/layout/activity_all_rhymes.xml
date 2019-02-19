@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".controllers.AllRhymes">
+    tools:context=".controllers.VideoListActivity">
 
     <RelativeLayout
         android:id="@+id/relativeLayout3"
@@ -24,10 +24,10 @@
             android:layout_width="50dp"
             android:layout_height="61dp"
             android:background="@null"
-            android:onClick="goBack"
             android:scaleType="fitCenter"
             android:translationX="13dp"
             android:translationY="30dp"
+            android:onClick="onHomeClick"
             app:srcCompat="@drawable/home_button" />
 
         <ImageButton
@@ -36,24 +36,41 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="-20dp"
             android:background="@null"
-            android:onClick="goBack"
             android:scaleType="fitCenter"
             android:translationX="13dp"
             android:translationY="282dp"
+            android:onClick="onBackClick"
             app:srcCompat="@drawable/arrow_left_button_nocircle" />
 
     </RelativeLayout>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/videoList"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="76dp"
-        android:layout_marginLeft="76dp"
+        android:layout_width="652dp"
+        android:layout_height="312dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/relativeLayout3"
-        app:layout_constraintStart_toEndOf="@+id/relativeLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.100000024" />
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="289dp"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:textSize="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Mother Goose"
+        app:layout_constraintBottom_toTopOf="@+id/videoList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
