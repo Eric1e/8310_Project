@@ -18,9 +18,11 @@ import model.Media;
 public class VideoListAdapter extends RecyclerView.Adapter<VideoListAdapter.VideoListViewHolder> {
 
     private ArrayList<Media> mediaList;
+    private String pre;
 
-    public VideoListAdapter(ArrayList<Media> mediaList) {
+    public VideoListAdapter(ArrayList<Media> mediaList, String pre) {
         this.mediaList = mediaList;
+        this.pre = pre;
     }
 
     @NonNull
@@ -28,7 +30,7 @@ public class VideoListAdapter extends RecyclerView.Adapter<VideoListAdapter.Vide
     public VideoListViewHolder onCreateViewHolder(@NonNull final ViewGroup viewGroup, int i) {
         LayoutInflater inflater = LayoutInflater.from(viewGroup.getContext());
         View view = inflater.inflate(R.layout.video_list_row, viewGroup, false);
-        return new VideoListViewHolder(view);
+        return new VideoListViewHolder(view, pre);
     }
 
     @Override
@@ -47,15 +49,18 @@ public class VideoListAdapter extends RecyclerView.Adapter<VideoListAdapter.Vide
         private ImageView thumbnail;
         private Media media;
 
-        public VideoListViewHolder(@NonNull final View itemView) {
+
+        public VideoListViewHolder(@NonNull final View itemView, final String pre) {
             super(itemView);
             this.thumbnail = itemView.findViewById(R.id.thumbnail_list);
+
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     FileManager.getInstance().setSelectedVideo(media.getPath());
                     Intent intent = new Intent(itemView.getContext(), PlayVideoActivity.class);
+                    intent.putExtra("category", pre);
                     itemView.getContext().startActivity(intent);
                 }
             });

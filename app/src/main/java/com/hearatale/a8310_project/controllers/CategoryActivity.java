@@ -17,6 +17,15 @@ public class CategoryActivity extends AppCompatActivity {
 
     public void onMotherClick(View view) {
         Intent intent = new Intent(this, VideoListActivity.class);
+        intent.putExtra("category", "m_");
+        intent.putExtra("title", "Mother Goose");
+        startActivity(intent);
+    }
+
+    public void onFatherClick(View view) {
+        Intent intent = new Intent(this, VideoListActivity.class);
+        intent.putExtra("category", "f_");
+        intent.putExtra("title", "Father Goose");
         startActivity(intent);
     }
 }

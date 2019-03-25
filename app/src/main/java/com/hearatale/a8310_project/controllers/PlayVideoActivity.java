@@ -46,7 +46,13 @@ public class PlayVideoActivity extends AppCompatActivity {
     }
 
     public void onBackClick(View v) {
+        String pre = "";
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            pre = extras.getString("category");
+        }
         Intent intent = new Intent(this, VideoListActivity.class);
+        intent.putExtra("category", pre);
         startActivity(intent);
     }
 

@@ -24,21 +24,29 @@ public class VideoListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        String catTitle = "";
+        String catType = "";
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_rhymes);
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            catTitle = extras.getString("title");
+            catType = extras.getString("category");
+        }
         videoList = findViewById(R.id.videoList);
         videoList.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
-        videoList.setAdapter(new VideoListAdapter(createMediaList()));
+        videoList.setAdapter(new VideoListAdapter(createMediaList(catType), catType));
     }
 
-    public ArrayList<Media> createMediaList() {
+    public ArrayList<Media> createMediaList(String pre) {
         ArrayList<Media> mediaList = new ArrayList<>();
         Field[] fields = R.raw.class.getFields();
 
         try {
             for (Field field : fields) {
                 String name = field.getName();
-                if (!name.substring(0,1).equals("q")) {
+                if (name.substring(0,2).equals(pre)) {
                     Media media = new Media(Integer.toString(field.getInt(field)));
                     mediaList.add(media);
                 }
