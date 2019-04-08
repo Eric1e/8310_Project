@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controllers.CategoryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="76dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/sidebar"
+                android:layout_width="76dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@color/colorPrimary" />
+
+            <ImageButton
+                android:id="@+id/home"
+                android:layout_width="50dp"
+                android:layout_height="61dp"
+                android:layout_centerInParent="false"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/home_button" />
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="-20dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/arrow_left_button_nocircle" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/father"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="onFatherClick"
+            android:text="Father\nVisit" />
+
+        <Button
+            android:id="@+id/mother"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="onMotherClick"
+            android:text="Mother" />
+
+        <Button
+            android:id="@+id/friends"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Friends" />
+
+        <Button
+            android:id="@+id/father_visit"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Father" />
+
+        <Button
+            android:id="@+id/mother_visit"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="onMotherVisitClick"
+            android:text="Mother\nVisit" />
+
+    </LinearLayout>
+
+</RelativeLayout>

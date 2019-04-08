@@ -51,7 +51,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:text="Father" />
+            android:text="Father\nVisit" />
 
         <Button
             android:id="@+id/mother"
@@ -79,7 +79,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:text="Father\nVisit" />
+            android:text="Father" />
 
         <Button
             android:id="@+id/mother_visit"
