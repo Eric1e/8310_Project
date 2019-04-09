@@ -52,11 +52,12 @@
 
         <TextView
             android:id="@+id/question"
-            android:layout_width="wrap_content"
+            android:layout_width="544dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="70dp"
             android:layout_marginBottom="70dp"
-            android:text="What did Mother Goose ride?"
+            android:gravity="center"
+            android:text="Mother Goose would ride on a very fine what?"
             android:textColor="@android:color/black"
             android:textSize="34sp" />
 

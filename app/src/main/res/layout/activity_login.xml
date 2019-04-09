@@ -158,7 +158,7 @@
         android:layout_marginLeft="16dp"
         android:background="@null"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/arrow_left_button_BLUE" />
+        app:srcCompat="@drawable/arrow_left_button_blue" />
 
     <ImageButton
         android:id="@+id/forward"

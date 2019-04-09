@@ -20,10 +20,10 @@ import java.util.Collections;
 import java.util.Random;
 
 public class QuizActivity extends AppCompatActivity {
-    private Button answer1 = findViewById(R.id.answer1);
-    private Button answer2 = findViewById(R.id.answer2);
-    private Button answer3 = findViewById(R.id.answer3);
-    private Button answer4 = findViewById(R.id.answer4);
+//    private Button answer1 = findViewById(R.id.answer1);
+//    private Button answer2 = findViewById(R.id.answer2);
+//    private Button answer3 = findViewById(R.id.answer3);
+//    private Button answer4 = findViewById(R.id.answer4);
 
     public void fade1(View view) {
         CardView card1 = findViewById(R.id.card1);

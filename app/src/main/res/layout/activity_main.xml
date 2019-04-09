@@ -46,6 +46,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.611"
-        app:srcCompat="@drawable/arrow_right_button_BLUE" />
+        app:srcCompat="@drawable/arrow_right_button_blue" />
 
 </android.support.constraint.ConstraintLayout>
