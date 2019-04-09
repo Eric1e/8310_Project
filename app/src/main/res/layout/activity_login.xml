@@ -151,14 +151,14 @@
 
     <ImageButton
         android:id="@+id/back"
-        android:scaleType="fitCenter"
-        android:background="@null"
         android:layout_width="56dp"
         android:layout_height="46dp"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
         android:layout_marginLeft="16dp"
-        app:srcCompat="@drawable/arrow_left_button" />
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/arrow_left_button_BLUE" />
 
     <ImageButton
         android:id="@+id/forward"

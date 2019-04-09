@@ -46,16 +46,18 @@
 
         <Button
             android:id="@+id/father"
-            android:layout_width="125dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
             android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:text="Father" />
+            android:text="Father\nVisit" />
 
         <Button
             android:id="@+id/mother"
-            android:layout_width="125dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
             android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -65,7 +67,8 @@
 
         <Button
             android:id="@+id/friends"
-            android:layout_width="125dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
             android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -73,17 +76,9 @@
             android:text="Friends" />
 
         <Button
-            android:id="@+id/father_visit"
-            android:layout_width="125dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:text="Father\nVisit" />
-
-        <Button
             android:id="@+id/mother_visit"
-            android:layout_width="125dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
             android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"

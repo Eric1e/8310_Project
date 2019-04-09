@@ -1,6 +1,7 @@
 package model;
 
 import android.graphics.Bitmap;
+import android.media.MediaMetadataRetriever;
 import android.media.ThumbnailUtils;
 import android.net.Uri;
 import android.provider.MediaStore;
@@ -18,7 +19,7 @@ public class Media {
 
     public Media(String path) {
         this.path = Uri.parse("android.resource://com.hearatale.a8310_project/" + path);
-        this.thumbnail = ThumbnailUtils.createVideoThumbnail(path, MediaStore.Video.Thumbnails.MINI_KIND);
+        //this.thumbnail = ThumbnailUtils.createVideoThumbnail("/data/user/0/com.hearatale.a8310_project/files", MediaStore.Video.Thumbnails.MINI_KIND);
     }
 
     public String getTitle() {
@@ -31,6 +32,10 @@ public class Media {
 
     public Bitmap getThumbnail() {
         return thumbnail;
+    }
+
+    public void setThumbnail(Bitmap thumb) {
+        this.thumbnail = thumb;
     }
 
     public ArrayList<String> getQuizPaths() {

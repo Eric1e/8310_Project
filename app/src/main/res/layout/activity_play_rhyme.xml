@@ -68,7 +68,7 @@
             android:onClick="onQuizClick"
             android:scaleType="fitCenter"
             android:tint="@color/colorAccent"
-            app:srcCompat="@android:drawable/ic_menu_help" />
+            app:srcCompat="@drawable/quiz_icon" />
 
     </RelativeLayout>
 

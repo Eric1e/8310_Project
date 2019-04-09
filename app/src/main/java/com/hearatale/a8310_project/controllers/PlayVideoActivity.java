@@ -20,11 +20,13 @@ public class PlayVideoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_rhyme);
 
+        //Pull out video view and set the video, then auto play
         final VideoView mVideoView = findViewById(R.id.videoView);
         mVideoView.setVideoURI(FileManager.getInstance().getSelectedVideo());
         mVideoView.requestFocus();
         mVideoView.start();
 
+        //Allows for replaying video from beginning
         ImageButton restart = findViewById(R.id.replay);
         restart.setOnClickListener(new ImageButton.OnClickListener() {
             @Override
