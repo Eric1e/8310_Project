@@ -6,6 +6,7 @@ This is an android appplication with nursery rhymes to help improve reading skil
   - Four rhyme categories are included.
   - A login process with different animals to pick from for the children.
   - Quiz questions for the Mother category.
+  - Inside of each category, a rhyme can be selected to listen to.
   
 ##### Known issues:
   - Audio levels vary between files.
