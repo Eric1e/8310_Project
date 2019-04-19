@@ -41,4 +41,13 @@ public class CategoryActivity extends AppCompatActivity {
         intent.putExtra("title", "Mother Goose Visit");
         startActivity(intent);
     }
+
+    /*Changes screen view to Father Category
+    Passes in file type of f_ to populate rhyme list*/
+    public void onFriendClick(View view) {
+        Intent intent = new Intent(this, VideoListActivity.class);
+        intent.putExtra("category", "fr_");
+        intent.putExtra("title", "Friend");
+        startActivity(intent);
+    }
 }
