@@ -13,6 +13,7 @@ This is an android appplication with nursery rhymes to help improve reading skil
   - Lack of persistent user.
   - Home experiences currently not included.
   - Thumbnails are currently a placeholder image until a better method is discovered.
+  - UI is not uniform across different devices.
 
 #### Installation Instructions:
   - Pre-requisites: Approximately 3 GB of space on Android device.
