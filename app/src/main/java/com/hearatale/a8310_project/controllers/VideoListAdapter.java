@@ -23,11 +23,13 @@ public class VideoListAdapter extends RecyclerView.Adapter<VideoListAdapter.Vide
     private String path;
     private ArrayList<Media> mediaList;
     private String pre;
+    private String title;
 
-    public VideoListAdapter(String path, ArrayList<Media> mediaList, String pre) {
+    public VideoListAdapter(String path, ArrayList<Media> mediaList, String pre, String title) {
         this.path = path;
         this.mediaList = mediaList;
         this.pre = pre;
+        this.title = title;
     }
 
     //Setup view holder that will bind to the information
@@ -69,6 +71,7 @@ public class VideoListAdapter extends RecyclerView.Adapter<VideoListAdapter.Vide
                     FileManager.getInstance().setSelectedVideo(media.getPath());
                     Intent intent = new Intent(itemView.getContext(), PlayVideoActivity.class);
                     intent.putExtra("category", pre);
+                    intent.putExtra("title", title);
                     itemView.getContext().startActivity(intent);
                 }
             });
@@ -80,8 +83,8 @@ public class VideoListAdapter extends RecyclerView.Adapter<VideoListAdapter.Vide
 
         public void bind(Media media) {
             this.media = media;
-            Bitmap b = ThumbnailUtils.createVideoThumbnail(media.getPath().toString(), MediaStore.Video.Thumbnails.MINI_KIND);
-            thumbnail.setImageBitmap(b);
+//            Bitmap b = ThumbnailUtils.createVideoThumbnail(media.getPath().toString(), MediaStore.Video.Thumbnails.MINI_KIND);
+//            thumbnail.setImageBitmap(b);
         }
     }
 }

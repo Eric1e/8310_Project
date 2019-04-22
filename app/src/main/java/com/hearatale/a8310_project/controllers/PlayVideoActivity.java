@@ -49,12 +49,15 @@ public class PlayVideoActivity extends AppCompatActivity {
 
     public void onBackClick(View v) {
         String pre = "";
+        String title = "";
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             pre = extras.getString("category");
+            title = extras.getString("title");
         }
         Intent intent = new Intent(this, VideoListActivity.class);
         intent.putExtra("category", pre);
+        intent.putExtra("title", title);
         startActivity(intent);
     }
 

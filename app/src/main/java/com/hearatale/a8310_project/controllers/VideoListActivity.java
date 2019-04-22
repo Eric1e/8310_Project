@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.TextView;
 
 import com.hearatale.a8310_project.R;
 
@@ -34,10 +35,12 @@ public class VideoListActivity extends AppCompatActivity {
             catType = extras.getString("category");
         }
         //Grab video list ID from view and then complete setup followed by populating the list
+        TextView txt = findViewById(R.id.title);
+        txt.setText(catTitle);
         videoList = findViewById(R.id.videoList);
         videoList.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         String path = this.getFilesDir().getAbsolutePath();
-        videoList.setAdapter(new VideoListAdapter(path, createMediaList(catType), catType));
+        videoList.setAdapter(new VideoListAdapter(path, createMediaList(catType), catType, catTitle));
     }
 
     //Creates rhyme list using passed in string prefix for type
