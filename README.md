@@ -17,7 +17,7 @@ This is an android appplication with nursery rhymes to help improve reading skil
 
 #### Installation Instructions:
   - Pre-requisites: Approximately 3 GB of space on Android device.
-  - Download Instructions: The APK can be downloaded from [HearATale](hearatale.com).
+  - Download Instructions: The APK can be downloaded from [HearATale](http://hearatale.com/).
   - Installation: Run the APK on the Android device you want to install the application onto. It should automatically begin installing upon opening the file. Once complete, the application can be found in the list of all applications.
   - Troubleshooting:
     - Insufficient storage: Not enough space on the device. Have to clear up the required space for the application.
