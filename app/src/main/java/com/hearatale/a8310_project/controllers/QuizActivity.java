@@ -20,10 +20,10 @@ import java.util.Collections;
 import java.util.Random;
 
 public class QuizActivity extends AppCompatActivity {
-//    private Button answer1 = findViewById(R.id.answer1);
-//    private Button answer2 = findViewById(R.id.answer2);
-//    private Button answer3 = findViewById(R.id.answer3);
-//    private Button answer4 = findViewById(R.id.answer4);
+    private Button answer1;
+    private Button answer2;
+    private Button answer3;
+    private Button answer4;
 
     public void fade1(View view) {
         CardView card1 = findViewById(R.id.card1);
@@ -49,6 +49,11 @@ public class QuizActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+
+        answer1 = findViewById(R.id.answer1);
+        answer2 = findViewById(R.id.answer2);
+        answer3 = findViewById(R.id.answer3);
+        answer4 = findViewById(R.id.answer4);
 
         Uri uri = Uri.parse("android.resource://com.hearatale.a8310_project/"+R.raw.question_001);
         MediaPlayer mediaPlayer = MediaPlayer.create(this, uri);
