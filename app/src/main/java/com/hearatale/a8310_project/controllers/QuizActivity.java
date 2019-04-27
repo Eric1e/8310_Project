@@ -122,7 +122,16 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void onBackClick(View v) {
+        String pre = "";
+        String title = "";
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            pre = extras.getString("category");
+            title = extras.getString("title");
+        }
         Intent intent = new Intent(this, PlayVideoActivity.class);
+        intent.putExtra("category", pre);
+        intent.putExtra("title", title);
         startActivity(intent);
     }
 

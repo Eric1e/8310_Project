@@ -68,6 +68,7 @@
             android:onClick="onQuizClick"
             android:scaleType="fitCenter"
             android:tint="@color/colorAccent"
+            android:visibility="invisible"
             app:srcCompat="@drawable/quiz_icon" />
 
     </RelativeLayout>

@@ -20,6 +20,17 @@ public class PlayVideoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_rhyme);
 
+        String title = "";
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            title = extras.getString("title");
+        }
+
+        ImageButton quizB = findViewById(R.id.quiz);
+        if ("Mother Goose".equals(title)) {
+            quizB.setVisibility(View.VISIBLE);
+        }
+
         //Pull out video view and set the video, then auto play
         final VideoView mVideoView = findViewById(R.id.videoView);
         mVideoView.setVideoURI(FileManager.getInstance().getSelectedVideo());
@@ -62,7 +73,16 @@ public class PlayVideoActivity extends AppCompatActivity {
     }
 
     public void onQuizClick(View v) {
+        String pre = "";
+        String title = "";
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            pre = extras.getString("category");
+            title = extras.getString("title");
+        }
         Intent intent = new Intent( this, QuizActivity.class);
+        intent.putExtra("category", pre);
+        intent.putExtra("title", title);
         startActivity(intent);
     }
 }
