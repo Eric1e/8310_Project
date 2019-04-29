@@ -180,5 +180,6 @@
         android:layout_marginTop="40dp"
         android:text="Choose Your Favorite Animal!"
         android:textColor="@android:color/black"
-        android:textSize="46sp" />
+        android:textSize="46sp"
+        app:fontFamily="@font/fredoka_one" />
 </RelativeLayout>

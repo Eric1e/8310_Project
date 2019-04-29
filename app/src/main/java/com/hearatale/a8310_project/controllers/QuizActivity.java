@@ -168,48 +168,40 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.answer1:
                 if (answer_number == 0) {
                     answer1.setText("Correct!");
-                    fade2();
-                    fade3();
-                    fade4();
                     next_question.setVisibility(View.VISIBLE);
                 } else {
                     answer1.setText("That's wrong, \ntry again!");
+                    fade1();
                 }
                 break;
 
             case R.id.answer2:
                 if (answer_number == 1) {
                     answer2.setText("Correct!");
-                    fade1();
-                    fade3();
-                    fade4();
                     next_question.setVisibility(View.VISIBLE);
                 } else {
                     answer2.setText("That's wrong, \ntry again!");
+                    fade2();
                 }
                 break;
 
             case R.id.answer3:
                 if (answer_number == 2) {
                     answer3.setText("Correct!");
-                    fade1();
-                    fade2();
-                    fade4();
                     next_question.setVisibility(View.VISIBLE);
                 } else {
                     answer3.setText("That's wrong, \ntry again!");
+                    fade3();
                 }
                 break;
 
             case R.id.answer4:
                 if (answer_number == 3) {
                     answer4.setText("Correct!");
-                    fade1();
-                    fade2();
-                    fade3();
                     next_question.setVisibility(View.VISIBLE);
                 } else {
                     answer4.setText("That's wrong, \ntry again!");
+                    fade4();
                 }
                 break;
 
